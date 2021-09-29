@@ -1,7 +1,7 @@
-----------------
+---
 layout: page
-title: "testpage"
+title: testpage
 permalink: /testpage/
------------------
+---
 
 Maybe this will work???
