@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Introduction to GitHub"
+title: "1.1 Introduction to GitHub"
 permalink: /Intro_GitHub/
 ---
 
