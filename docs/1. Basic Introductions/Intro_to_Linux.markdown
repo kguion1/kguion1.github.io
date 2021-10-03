@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Introduction to Linux"
+title: "1.1 Introduction to Linux"
 permalink: /Intro_Linux/
 ---
 
