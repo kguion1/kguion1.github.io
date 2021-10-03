@@ -11,3 +11,9 @@ For beginner data analyzers, an in depth understanding of Linux is not needed. T
 
 ## How to use Linux on your computer
 To use Linux on your computer, you need a terminal that is Linux-based. For Mac, you are in luck! The default terminal on Macs uses a Linux operating system. For PC computers, we recommend downloading the Ubuntu terminal via [these instructions](https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview). 
+
+### Understanding Linux as a file system
+Normally when we are navigating through files on our computer we use a graphical interface, like "Finder" on Macs, or "File Explorer" on PC comptuers. However, we can do the same thing with Linux, via the terminal. We do this so we can more easily 
+
+#### Important note about Ubuntu (SKIP for MAC)
+Ubuntu has a specific filing system that requires and extra first step. If you look at your file explorer on PC, you may notice that your Local Disk is listed as a C drive (C:). Opening the Local Disk, there is a folder called "Users" and in it should be a folder with your User's name that was chosen when setting up the computer. We recommend that there are no spaces or special characters, even apostrophes, in this name. You can modify this via [these instructions](https://www.windowscentral.com/how-change-account-name-windows-10-sign-screen).
