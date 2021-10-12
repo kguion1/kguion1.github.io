@@ -5,8 +5,8 @@ permalink: /Intro_GitHub/
 ---
 
 ## What is GitHub?
-GitHub is a cloud-based software development tool. It uses Git, a command line tool that
-focuses on version control.
+GitHub is a cloud-based software development tool. You can think of GitHub similar to Google Drive, but created for code! With GitHub you can save code in your web-based account, revert your code back to previous "versions", and collaborate with other coders! GitHub uses Git, a command line tool that
+focuses on "version control". 
 
 ## What is version control?
 
@@ -22,7 +22,8 @@ using version control software is akin to taking "snapshots" of your code.
 
 Several version control software exist, and Git is one of the most popular. It is
 free and open source and has extensive documentation and integration with other
-software tools. You can download Git [here](https://git-scm.com/).
+software tools. You can download Git [here](https://git-scm.com/). 
+# Terence, does git come automatically on ubuntu and mac? cause if yes, they don't have to download?
 
 ## How does Github integrate with Git?
 
