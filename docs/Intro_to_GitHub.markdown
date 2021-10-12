@@ -16,7 +16,7 @@ that includes re-purposing code for more functionality or re-designing it from t
 ground up. Thus, managing all versions of your code can quickly become unmanageable. This
 is where version control software is extremely useful; you can store versions of your code
 in a remote environment and readily access all versions. One useful analogy is that
-using version control software is akin to taking "snapshots" of your code. 
+using version control software is akin to taking "snapshots" of your code or "tracking changes" and "Document History" with Google Docs. 
 
 ## What is Git?
 
