@@ -5,8 +5,8 @@ permalink: /Intro_GitHub/
 ---
 
 ## What is GitHub?
-GitHub is a cloud-based software development tool. You can think of GitHub similar to Google Drive, but created for code! With GitHub you can save code in your web-based account, revert your code back to previous "versions", and collaborate with other coders! GitHub uses Git, a command line tool that
-focuses on "version control". 
+GitHub is a cloud-based software development tool. You can think of GitHub similar to Google Drive, but created for code! With GitHub you can save code in your web-based account, revert your code back to previous "versions", and collaborate with other coders just like you can edit, track changes, and share files with Google Drive! 
+GitHub uses Git, a command line tool that focuses on "version control". 
 
 ## What is version control?
 
