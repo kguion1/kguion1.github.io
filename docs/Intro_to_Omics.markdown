@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "1.4 Introduction to -omics"
-permalink: /Intro_Public_Data/
+permalink: /Intro_Omics/
 ---
 
 ## What are the "-omics"?
