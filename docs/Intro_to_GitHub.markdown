@@ -14,25 +14,35 @@ There are a few different methods to take advantage of a GitHub account. While t
 Navigate to https://github.com to create an account
 
 ### Step 2: Ensure the git client is installed in your terminal of choice.
-An easy way to do this is just to type ```git --version``` on the command line. The version of git that you are using should appear. If it does not, you need to install git before continuing
+An easy way to do this is just to type ```git --version``` on the command line. The version of git that you are using should appear. If it does not, you can download git [here](https://git-scm.com/).
 
 ### Step 3: Set up an SSH key.
 An SSH key is a security feature that is not unique to GitHub. Creating an SSH key will allow you to sign into GitHub from your terminal without even typing in your password! It works by generating two unique “keys” for your identify. One private key is kept on your computer while the other public key is given to GitHub, or any other service you are using. Whenever you attempt to login, an algorithm converts your private key to the public key and matches it to your account. Rather than GitHub storing a traditional password, GitHub only has access to a public version of your SSH key, creating a more secure account and login. 
 
 To generate an SSH, complete the following steps, or see [this article](https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). 
 
-  1. Open you terminal and type ```ssh-keygen -t ed25519 -C “insert email address here”```
-  2. Press Enter for default “Enter file in which to save.” and enter your desired passphrase.
-  3. Type the following list of commands in the command line, one after another.
+  1. Open you terminal and type 
+        
+        ```ssh-keygen -t ed25519 -C “insert email address here”```
+        
+  3. Press Enter for default “Enter file in which to save.” and enter your desired passphrase.
+  4. Type the following list of commands in the command line, one after another.
+  
        ```eval “$(ssh-agent -s)”
+       
         touch ~/.ssh/config
+        
         nano ~/.ssh/config```
+        
   4.  Type the following into the nano screen that you have opened. It may be easier to just type the needed lines, rather than Copy and Paste. 
          HINT: Sometimes your copy and paste keyboard shortcuts do not work in the terminal. For example, ctrl-C in Terminal usually is a shortcut to stop running  the current program. On Windows Ubuntu, you can right click the top banner and select Edit -> Copy or Paste. Alternatively, you can try ctrl-shift-C to Copy and ctrl-shift-V to Paste. For Mac, you can select Edit -> Copy or Paste, or command-c and command-v. Unfortunately, these commands do not always work with the Nano text editor.
          
          ```Host *
+         
             AddKeysToAgent yes
+            
             UseKeychain yes
+            
             IdentityFile ~/.ssh/id_ed25519```
 
    After entering the lines, ctrl-o to “write out”, Enter to save, and ctrl-x to exit Nano.
@@ -40,11 +50,14 @@ To generate an SSH, complete the following steps, or see [this article](https://
    5. Type the following to create and save the SSH key
         
         ```ssh-add -K ~/.ssh/id_ed25519```
+        
    6. Congrats! You have created an SSH key! Now we need to add it to your GitHub account.
           Open your public key with the command: 
+          
               ```cat ~/.ssh/id_ed25519.pub```
-          Copy the ENTIRITY of what is printed using the previous Hint. 
-          Open your GitHub account on an internet browser, navigate to Settings -> SSH and GPG keys -> Add new. Add an informative title to the SSH key like “personal laptop” and paste your public key in the large box. Add the SSH key.
+              
+         Copy the ENTIRITY of what is printed using the previous Hint. 
+         Open your GitHub account on an internet browser, navigate to Settings -> SSH and GPG keys -> Add new. Add an informative title to the SSH key like “personal laptop” and paste your public key in the large box. Add the SSH key.
 
 WHEW that was a lot of steps! You can now use the SSH key to login to GitHub from your terminal without typing in your password! Remember, a separate SSH key is used and needs to be generated for each individual computer that you login from.
 
@@ -58,10 +71,15 @@ In GitHub, a repository is a project folder for all the files related to a singl
 * Repositories are project folders in GitHub.
 * TWO “versions” of the repository exist: one on your local computer for editing and running code; the second is saved on your GitHub account.
 * To save code:
-      Use ```cd``` to navigate into your repository
+      
+     Use ```cd``` to navigate into your repository
+      
       ```git add .
+      
       git commit -m “insert an informative message in quotes”
+      
       git push
+      
       git status``` shows which files have been successfully saved, and which have unsaved changes
 
 
