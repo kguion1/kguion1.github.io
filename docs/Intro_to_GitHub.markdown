@@ -36,11 +36,8 @@ To generate an SSH, complete the following steps, or see [this article](https://
          HINT: Sometimes your copy and paste keyboard shortcuts do not work in the terminal. For example, ctrl-C in Terminal usually is a shortcut to stop running  the current program. On Windows Ubuntu, you can right click the top banner and select Edit -> Copy or Paste. Alternatively, you can try ctrl-shift-C to Copy and ctrl-shift-V to Paste. For Mac, you can select Edit -> Copy or Paste, or command-c and command-v. Unfortunately, these commands do not always work with the Nano text editor.
          
           Host *
-         
             AddKeysToAgent yes
-            
             UseKeychain yes
-            
             IdentityFile ~/.ssh/id_ed25519
 
    After entering the lines, ctrl-o to “write out”, Enter to save, and ctrl-x to exit Nano.
