@@ -26,21 +26,22 @@ To generate an SSH, complete the following steps, or see [this article](https://
           ssh-keygen -t ed25519 -C “insert email address here”
         
   3. Press Enter for default “Enter file in which to save.” and enter your desired passphrase.
-  4. Type the following list of commands in the command line, pressing enter after each.
+  4. Type the following list of commands in the command line, pressing ```Enter``` after each.
   
           eval “$(ssh-agent -s)”
           touch ~/.ssh/config
           nano ~/.ssh/config
         
   4.  Type the following into the nano screen that you have opened. It may be easier to just type the needed lines, rather than Copy and Paste. 
-         HINT: Sometimes your copy and paste keyboard shortcuts do not work in the terminal. For example, ctrl-C in Terminal usually is a shortcut to stop running  the current program. On Windows Ubuntu, you can right click the top banner and select Edit -> Copy or Paste. Alternatively, you can try ctrl-shift-C to Copy and ctrl-shift-V to Paste. For Mac, you can select Edit -> Copy or Paste, or command-c and command-v. Unfortunately, these commands do not always work with the Nano text editor.
+         
+         HINT: Sometimes your copy and paste keyboard shortcuts do not work in the terminal. For example, ```ctrl-C``` in Terminal usually is a shortcut to stop running  the current program. On Windows Ubuntu, you can right click the top banner and select Edit -> Copy or Paste. Alternatively, you can try ```ctrl-shift-C``` to Copy and ```ctrl-shift-V``` to Paste. For Mac, you can select Edit -> Copy or Paste, or ```command-c``` and ```command-v```. Unfortunately, these commands do not always work with the Nano text editor and typing it out may be the easiest option.
          
           Host *
             AddKeysToAgent yes
             UseKeychain yes
             IdentityFile ~/.ssh/id_ed25519
 
-   After entering the lines, ctrl-o to “write out”, Enter to save, and ctrl-x to exit Nano.
+   After entering the lines, ```ctrl-o``` to “write out”, ```Enter``` to save, and ```ctrl-x``` to exit Nano.
    
    5. Type the following to create and save the SSH key
         
