@@ -29,9 +29,7 @@ To generate an SSH, complete the following steps, or see [this article](https://
   4. Type the following list of commands in the command line, one after another.
   
           eval “$(ssh-agent -s)”
-       
           touch ~/.ssh/config
-        
           nano ~/.ssh/config
         
   4.  Type the following into the nano screen that you have opened. It may be easier to just type the needed lines, rather than Copy and Paste. 
@@ -54,7 +52,7 @@ To generate an SSH, complete the following steps, or see [this article](https://
    6. Congrats! You have created an SSH key! Now we need to add it to your GitHub account.
           Open your public key with the command: 
           
-              cat ~/.ssh/id_ed25519.pub
+          cat ~/.ssh/id_ed25519.pub
               
          Copy the ENTIRITY of what is printed using the previous Hint. 
          Open your GitHub account on an internet browser, navigate to Settings -> SSH and GPG keys -> Add new. Add an informative title to the SSH key like “personal laptop” and paste your public key in the large box. Add the SSH key.
@@ -81,37 +79,3 @@ In GitHub, a repository is a project folder for all the files related to a singl
       git push
       
       git status
-     shows which files have been successfully saved, and which have unsaved changes
-
-
----
-***
-___
-
-## What is GitHub?
-GitHub is a cloud-based software development tool. You can think of GitHub similar to Google Drive, but created for code! With GitHub you can save code in your web-based account, revert your code back to previous "versions", and collaborate with other coders just like you can edit, track changes, and collaborate on files with Google Drive! 
-GitHub uses Git, a command line tool that focuses on "version control". 
-
-## What is version control?
-
-Version control is the process of managing changes to computer software. In the process
-of developing software, there will inevitably be changes to the code you write,  whether
-that includes re-purposing code for more functionality or re-designing it from the
-ground up. Thus, managing all versions of your code can quickly become unmanageable. This
-is where version control software is extremely useful; you can store versions of your code
-in a remote environment and readily access all versions. One useful analogy is that
-using version control software is akin to taking "snapshots" of your code or "tracking changes" and "Document History" with Google Docs. 
-
-## What is Git?
-
-Several version control software exist, and Git is one of the most popular. It is
-free and open source and has extensive documentation and integration with other
-software tools. You can download Git [here](https://git-scm.com/). 
-# Terence, does git come automatically on ubuntu and mac? cause if yes, they don't have to download?
-
-## How does Github integrate with Git?
-
-Github is a website where you can manage your repositories using a web interface.
-
-### Basic Git workflow
-
