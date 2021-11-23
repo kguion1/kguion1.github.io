@@ -72,12 +72,12 @@ In GitHub, a repository is a project folder for all the files related to a singl
 * TWO “versions” of the repository exist: one on your local computer for editing and running code; the second is saved on your GitHub account.
 * To save code:
       
-     Use ```cd``` to navigate into your repository
+     - Use ```cd``` to navigate into your repository
+      
+      git status
       
       git add .
-      
-      git commit -m “insert an informative message in quotes”
-      
+      git commit -m “insert an informative message in quotes"
       git push
       
       git status
