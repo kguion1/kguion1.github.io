@@ -26,7 +26,7 @@ To generate an SSH, complete the following steps, or see [this article](https://
           ssh-keygen -t ed25519 -C “insert email address here”
         
   3. Press Enter for default “Enter file in which to save.” and enter your desired passphrase.
-  4. Type the following list of commands in the command line, one after another.
+  4. Type the following list of commands in the command line, pressing enter after each.
   
           eval “$(ssh-agent -s)”
           touch ~/.ssh/config
