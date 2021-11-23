@@ -11,7 +11,7 @@ GitHub is a cloud-based software development tool. You can think of GitHub simil
 There are a few different methods to take advantage of a GitHub account. While there is a Desktop application version of GitHub, this article will discuss how to access GitHub using command line on a terminal and through any web browser. If you are unsure about what “terminal” we are referring to, please see INSERT LINK before continuing.
 
 ### Step 1: Set up an account!
-Navigate to https://github.com to create an account
+Navigate to [github.com](https://github.com) to create an account
 
 ### Step 2: Ensure the git client is installed in your terminal of choice.
 An easy way to do this is just to type ```git --version``` on the command line. The version of git that you are using should appear. If it does not, you can download git [here](https://git-scm.com/).
@@ -32,7 +32,7 @@ To generate an SSH, complete the following steps, or see [this article](https://
           touch ~/.ssh/config
           nano ~/.ssh/config
         
-  4.  Type the following into the nano screen that you have opened. It may be easier to just type the needed lines, rather than Copy and Paste. 
+  5.  Type the following into the nano screen that you have opened. It may be easier to just type the needed lines, rather than Copy and Paste. 
          
          HINT: Sometimes your copy and paste keyboard shortcuts do not work in the terminal. For example, ```ctrl-C``` in Terminal usually is a shortcut to stop running  the current program. On Windows Ubuntu, you can right click the top banner and select Edit -> Copy or Paste. Alternatively, you can try ```ctrl-shift-C``` to Copy and ```ctrl-shift-V``` to Paste. For Mac, you can select Edit -> Copy or Paste, or ```command-c``` and ```command-v```. Unfortunately, these commands do not always work with the Nano text editor and typing it out may be the easiest option.
          
@@ -41,13 +41,13 @@ To generate an SSH, complete the following steps, or see [this article](https://
             UseKeychain yes
             IdentityFile ~/.ssh/id_ed25519
 
-   After entering the lines, ```ctrl-o``` to “write out”, ```Enter``` to save, and ```ctrl-x``` to exit Nano.
+      After entering the lines, ```ctrl-o``` to “write out”, ```Enter``` to save, and ```ctrl-x``` to exit Nano.
    
-   5. Type the following to create and save the SSH key
+   6. Type the following to create and save the SSH key
         
           ssh-add -K ~/.ssh/id_ed25519
         
-   6. Congrats! You have created an SSH key! Now we need to add it to your GitHub account.
+   7. Congrats! You have created an SSH key! Now we need to add it to your GitHub account.
           Open your public key with the command: 
           
           cat ~/.ssh/id_ed25519.pub
@@ -58,10 +58,10 @@ To generate an SSH, complete the following steps, or see [this article](https://
 WHEW that was a lot of steps! You can now use the SSH key to login to GitHub from your terminal without typing in your password! Remember, a separate SSH key is used and needs to be generated for each individual computer that you login from.
 
 ### Step 4: Create your first repository
-In GitHub, a repository is a project folder for all the files related to a single project. Remember that in practice, two “versions” of this repository will exist. The first is a local copy of the repository. This will look like any other folder that you have on your computer. In this version, you can edit and run your code. The second version is the saved version on your GitHub account. This can be accessed via your GitHub web account and any code history or changes can be tracked. You must manually upload any edits made to your local version to the saved version. There is NO automatic saving. 
+In GitHub, a *repository* is a project folder for all the files related to a single project. Remember that in practice, two “versions” of this repository will exist. The first is a local copy of the repository. This will look like any other folder that you have on your computer. In this version, you can edit and run your code. The second version is the saved version on your GitHub account. This can be accessed via your GitHub web account and any code history or changes can be tracked. You must manually upload any edits made to your local version to the saved version. There is NO automatic saving. 
 
 
-## TLDR
+## TL;DR
 * GitHub is like the Google Drive for coders.
 * To use GitHub from the terminal, an SSH key is used.
 * Repositories are project folders in GitHub.
