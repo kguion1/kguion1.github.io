@@ -85,9 +85,20 @@ Now you that you have an empty repository, let's create and save your first file
    3. Use the nano test editor to write a fun message in your new file
    4. Now is the important part. If you login to your GitHub account, you can see that your *test_file.txt* is not yet there. That is because there is **no automaic saving**. The following commands will need to be followed every time you want to save the changes from your local copy to the saved, web-based copy.
           
-         ```git status``` shows the current "status" of your repositories. Anything in red and labelled as "Untracked files" are saved in your LOCAL copy, but NOT saved in your web-based copy. 
-         ```git add .``` This gets all untracked files ready to be saved. 
-
+         ```git status``` shows the current "status" of your repositories. 
+         Anything in red and labelled as "Untracked files" are saved in your LOCAL copy, but NOT saved in your web-based copy. 
+         
+         ```git add .``` This gets all untracked files ready to be saved. Alternatively you can replace the . with a specific file name to just save one file rather than all untracked files.
+         
+         ```git commit -m "informative message"``` This "commits" your files to being pushed up to the GitHub version
+         
+         ```git push``` This "pushes" your files to the GitHub version
+         Check your online GitHub account and your file should now be visible!
+         
+         ```git status``` Notice the difference after you have added, committed, and pushed your new file.
+         
+         
+Congratualations! You know should have a basic understanding of how to use GitHub. Though it may be confusing at first, GitHub is very heavily used in the coding community and is a great, marketable skill to have. As you practice more and more, GitHub will make more sense and you will be able to take advantage of all that GitHub has to offer. 
 
 ## TL;DR
 * GitHub is like the Google Drive for coders.
