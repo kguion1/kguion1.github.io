@@ -60,6 +60,34 @@ WHEW that was a lot of steps! You can now use the SSH key to login to GitHub fro
 ### Step 4: Create your first repository
 In GitHub, a *repository* is a project folder for all the files related to a single project. Remember that in practice, two “versions” of this repository will exist. The first is a local copy of the repository. This will look like any other folder that you have on your computer. In this version, you can edit and run your code. The second version is the saved version on your GitHub account. This can be accessed via your GitHub web account and any code history or changes can be tracked. You must manually upload any edits made to your local version to the saved version. There is NO automatic saving. 
 
+We also mentioned that like Google Drive, you can collaborate on GitHub. To do this, each collaborator has *their own local copy of the respository* and then saves it to the *same repository on GitHub*. 
+
+#### Let's try to set up your first repository!
+Please note that there are multiple ways to do this. This is just an easy first example.
+   1. Login to your GitHub account on any web browser
+   2. Look for your icon in the top right corner -> Your Respositories -> green **New** button
+   3. Create an informative name for your project folder, select **Private** and select an "Add a README file"
+   4. Create!
+   5. Click the green **Code** dropdown -> SSH -> Copy the line starting with **git@github.com**
+   6. Open your terminal and use ```cd``` to navigate to where you want to create your local copy of the folder. We suggest the Desktop or Documents.
+           
+           git clone PASTE FROM STEP 5
+           
+   7. Congrats! You have created your first repository. To double check, open your file system normally and look for your folder.
+
+### Step 5: "Push" your first file
+Now you that you have an empty repository, let's create and save your first file!
+   1. Open your terminal and navigate into the local copy of your new repository
+   2. Create a new file with ```nano```
+    
+           nano test_file.txt
+        
+   3. Use the nano test editor to write a fun message in your new file
+   4. Now is the important part. If you login to your GitHub account, you can see that your *test_file.txt* is not yet there. That is because there is **no automaic saving**. The following commands will need to be followed every time you want to save the changes from your local copy to the saved, web-based copy.
+          
+         ```git status``` shows the current "status" of your repositories. Anything in red and labelled as "Untracked files" are saved in your LOCAL copy, but NOT saved in your web-based copy. 
+         ```git add .``` This gets all untracked files ready to be saved. 
+
 
 ## TL;DR
 * GitHub is like the Google Drive for coders.
