@@ -39,7 +39,8 @@ navigation_header:
 - title: About
   url: /about/
 - title: Tutorials
-  url: /blog/
+  url: /tutorials/
+#consider: Articles, Definitions, Vocab, etc.
 
 # Footer nav
 navigation_footer:
