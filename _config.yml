@@ -39,6 +39,8 @@ navigation_header:
 - title: About
   url: /about/
 - title: Tutorials
+  url: /tutorials/
+- title: Browse
   url: /categories/
 #consider: Articles, Definitions, Vocab, etc.
 
