@@ -40,23 +40,21 @@ To generate an SSH, complete the following steps, or see [this article](https://
                    
           cat ~/.ssh/id_rsa.pub
 
-        
-         
-         HINT: Sometimes your copy and paste keyboard shortcuts do not work in the terminal. For example, ```ctrl-C``` in Terminal usually is a shortcut to stop running  the current program. On Windows Ubuntu, you can right click the top banner and select Edit -> Copy or Paste. Alternatively, you can try ```ctrl-shift-C``` to Copy and ```ctrl-shift-V``` to Paste. For Mac, you can select Edit -> Copy or Paste, or ```command-c``` and ```command-v```. Unfortunately, these commands do not always work with the Nano text editor and typing it out may be the easiest option.
+HINT: Sometimes your copy and paste keyboard shortcuts do not work in the terminal. For example, ```ctrl-C``` in Terminal usually is a shortcut to stop running  the current program. On Windows Ubuntu, you can right click the top banner and select Edit -> Copy or Paste. Alternatively, you can try ```ctrl-shift-C``` to Copy and ```ctrl-shift-V``` to Paste. For Mac, you can select Edit -> Copy or Paste, or ```command-c``` and ```command-v```. Unfortunately, these commands do not always work with the Nano text editor and typing it out may be the easiest option.
          
  5. Set up Git on your computer:
 
 Configure your personal information with the following commands in your terminal:
 
 		git config --global user.name "First Last Name"
-git config --global user.email "insert email"
+		git config --global user.email "insert email"
 
 (Optional) Set some quality-of-life settings:
 
-git config --global color.ui auto
-git config --global core.editor "nano"
-git config --global core.autocrlf input
-git config --global push.default simple
+		git config --global color.ui auto
+		git config --global core.editor "nano"
+		git config --global core.autocrlf input
+		git config --global push.default simple
 
 
 WHEW that was a lot of steps! You can now use the SSH key to login to GitHub from your terminal without typing in your password! Remember, a separate SSH key is used and needs to be generated for each individual computer that you login from.
