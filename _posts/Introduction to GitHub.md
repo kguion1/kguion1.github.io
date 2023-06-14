@@ -2,7 +2,6 @@
 title: Introduction to GitHub
 categories:
 - General
-- Getting Started with Code
 feature_image: "https://picsum.photos/2560/600?image=872"
 ---
 
