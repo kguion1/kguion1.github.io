@@ -1,7 +1,5 @@
 ---
 layout: page
-collectionpage: posts
-title: Tutorials
 ---
 
 
