@@ -5,10 +5,10 @@ title: Tutorials
 ---
 
 
-### Starting from Scratch  
+### *Starting from Scratch*  
 Follow this series to get a grasp of all the basics needed to start your coding journey!
   
-#### 1.1 Introduction to Linux-Based Terminal
+#### 1.1 [Introduction to Linux-Based Terminal](/2023-06-14-Introduction-to-GitHub)
 
   
 #### 1.2 Introduction to Github  
